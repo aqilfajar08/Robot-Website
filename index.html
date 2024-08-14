@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EXE website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="m-0 p-0 bg-black overflow-x-hidden">
+    <!-- Nav -->
+    <header
+      id="navbar"
+      class="bg-black fixed  transition-colors w-full z-10 p-3 md:flex md:items-center md:justify-between md:px-10 lg:px-40 xl:px-52"
+    >
+      <div class="flex justify-between items-center z-50">
+        <span
+          class="text-2xl text-white font-[poppins] font-semibold cursor-pointer transition-all duration-500"
+        >
+          <a href="#home">EXE</a>
+        </span>
+        <span
+          class="text-3xl cursor-pointer mx-2 md:hidden text-white rounded-md flex items-center px-2 py-1"
+        >
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        id="list"
+        class="bg-black transition md:flex md:items-center z-[-50] md:static absolute w-full left-0 md:w-auto md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] font-poppins"
+      >
+        <a
+          href="#about"
+          class="text-white text-base hover:text-sky-500 transition-all duration-300"
+        >
+          <li class="mx-4 my-6 md:my-2 font-semibold">About Robots</li>
+        </a>
+        <a
+          href="#evo"
+          class="text-white text-base hover:text-sky-500 transition-all duration-300"
+        >
+          <li class="mx-4 my-6 md:my-2 font-semibold">Evolution</li>
+        </a>
+        <a
+          href="#comp"
+          class="text-white text-base hover:text-sky-500 transition-all duration-300"
+        >
+          <li class="mx-4 my-6 md:my-2 font-semibold">Company</li>
+        </a>
+        <a
+          href="#per"
+          class="text-white text-base hover:text-sky-500 transition-all duration-300"
+        >
+          <li class="mx-4 my-6 md:my-2 font-semibold">Performance</li>
+        </a>
+      </ul>
+    </header>
+    <!-- End of Nav -->
+
+    <!-- First page -->
+    <section id="home">
+      <div class="relative h-screen w-full overflow-hidden">
+        <video
+          class="absolute top-0 left-0 w-full h-full object-cover brightness-50"
+          autoplay
+          muted
+          loop
+        >
+          <source src="asset/video/videoplayback.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute bottom-0 left-0 w-screen h-screen bg-gradient-to-t from-black xl:aspect-auto"
+        ></div>
+        <div
+          class="absolute pl-6 pr-14 top-0 left-0 w-full h-screen flex flex-wrap items-center md:text-center"
+        >
+          <div class="md:flex items-center flex-col space-y-3">
+            <div class="transition-all duration-300 flex">
+              <h1
+                class="text-white text-3xl font-poppins font-semibold md:text-4xl lg:text-4xl"
+              >
+                The generation of <span class="text-sky-500">robots</span>
+              </h1>
+            </div>
+            <div
+              class="transition-all duration-300 md:px-20 lg:px-48 space-y-5"
+            >
+              <span
+                class="text-white font-poppins text-base opacity-75 md:text-base lg:text-xl"
+              >
+                Welcome to the future <br />where innovation and technology
+                <br />converge. Dive into the world of robotics, where
+                cutting-edge machines redefine what's possible. Let's to explore
+                about robots!
+              </span>
+              <div
+                class="flex items-center rounded-md justify-center text-center h-10 w-28 border border-white hover:bg-blue-500 transition-all duration-300 md:h-12 md:w-28 md:mx-auto"
+              >
+                <a href="#about">
+                  <button class="text-white md:text-base lg:text-lg">
+                    Explore
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of first page -->
+
+    <!-- Second Page -->
+    <section id="about">
+      <div class="max-h-screen">
+        <div class="mx-auto max-w-screen-xl">
+          <div class="mx-auto max-w-lg text-center pt-16 px-6 md:pt-24 lg:pb-2">
+            <h2
+              class="text-white font-poppins text-2xl font-semibold lg:text-3xl"
+            >
+              About Robots
+            </h2>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center md:flex-row md:px-10 md:gap-x-6 lg:gap-x-10 xl:px-16"
+        >
+          <img
+            src="asset/img/character/Remove-bg.ai_1722916622192.png"
+            class="bg-cover w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72"
+            alt=""
+          />
+          <div class="space-y-2">
+            <div>
+              <h2
+                class="text-white font-poppins text-center text-base font-semibold md:text-xl md:text-start lg:text-3xl"
+              >
+                How Robots can grow until now?
+              </h2>
+            </div>
+            <div>
+              <p
+                class="text-white font-poppins text-center text-sm px-3 pb-10 md:px-0 md:text-start md:text-base lg:text-base xl:pr-20 xl:text-lg"
+              >
+                Robots evolved from simple automata to AI-powered systems,
+                starting with industrial robots in the 1950s. Advances in AI,
+                sensors, and mobility led to today’s humanoids, cobots, and
+                autonomous vehicles, reshaping industries and daily life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of second page -->
+
+    <!-- Third Page -->
+    <section id="evo" class="bg-black text-white">
+      <div
+        class="mx-auto max-w-screen-xl px-4 py-20 sm:px-6 lg:px-8 lg:py-20 xl:py-24"
+      >
+        <div class="mx-auto max-w-lg text-center">
+          <h2 class="text-3xl font-bold sm:text-4xl font-poppins">
+            The Evolution of <span class="text-sky-500">Robots</span>
+          </h2>
+          <p class="mt-4 text-sm font-poppins text-gray-300">
+            The robot revolution, powered by AI, is reshaping industries by
+            enhancing efficiency and replacing human labor. While boosting
+            productivity, it also raises ethical concerns like job displacement.
+            Robots are becoming central to daily life and the future of work.
+          </p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="relative overflow-hidden aspect-video w-full md:hover:scale-110 transition-all ease-in-out"
+          >
+            <video
+              class="hover-video relative brightness-70 bg-cover rounded-md w-full h-full object-cover"
+              muted
+              loop
+            >
+              <source
+                src="asset/video/videoplayback (1) - Trim.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="absolute flex bottom-16 left-0 pl-3 pb- sm:pb-8 xl:pb-2">
+              <h2 class="text-lg font-semibold text-white font-poppins md:text-sm xl:text-lg">
+                Ancient Automata
+              </h2>
+            </div>
+
+            <div class="absolute bottom-0 left-0 pl-3 pb-3 pr-3 sm:pr-32 lg:pr-1">
+              <p class="text-xs text-gray-300 font-poppins sm:text-lg md:text-sm">
+                Automata were mechanical devices from ancient times designed to
+                mimic human or animal actions, often for entertainment or
+                ritual.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full md:hover:scale-110 transition-all ease-in-out"
+          >
+            <video
+              class="hover-video relative brightness-70 aspect-video rounded-md"
+              muted
+              loop
+            >
+              <source
+                src="asset/video/Educational Film_ Industrial Revolution – From Manual to Machine Work (Waterframe + Spinning Mule) - Trim.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="absolute flex bottom-16 left-0 pl-3">
+              <h2 class="text-md font-semibold text-white font-poppins">
+                Industrial Revolution
+              </h2>
+            </div>
+
+            <div class="absolute bottom-0 left-0 pl-3 pb-3">
+              <p class="text-xs text-gray-300 font-poppins">
+                In the 18th and 19th centuries, machines became more complex,
+                enhancing industrial productivity and revolutionizing
+                manufacturing.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative overflow-hidden aspect-video w-full md:hover:scale-110 transition-all ease-in-out"
+          >
+            <video
+              class="hover-video relative brightness-70 bg-cover rounded-md w-full h-full object-cover"
+              muted
+              loop
+            >
+              <source
+                src="asset/video/UNIMATE - ROBOT - Trim.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="absolute flex bottom-16 left-0 pl-3">
+              <h2 class="text-md font-semibold text-white font-poppins">
+                Early Modern Robotics
+              </h2>
+            </div>
+
+            <div class="absolute bottom-0 left-0 pl-3 pb-3">
+              <p class="text-xs text-gray-300 font-poppins">
+                The 20th century introduced robotics, with industrial robots
+                like Unimate revolutionizing manufacturing and automating
+                repetitive tasks.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full md:hover:scale-110 transition-all ease-in-out"
+          >
+            <video
+              class="hover-video relative brightness-70 aspect-video rounded-md"
+              muted
+              loop
+            >
+              <source
+                src="asset/video/Ameca Humanoid Robot AI Platform.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="absolute flex bottom-16 left-0 pl-3">
+              <h2 class="text-md font-semibold text-white font-poppins">
+                Advanced Robotics Era
+              </h2>
+            </div>
+
+            <div class="absolute bottom-0 left-0 pl-3 pb-3">
+              <p class="text-xs text-gray-300 font-poppins">
+                Today, robots equipped with AI are widely used in fields like
+                medicine, military, and space exploration, becoming integral to
+                modern life.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full md:hover:scale-110 transition-all ease-in-out"
+          >
+            <video
+              class="hover-video relative brightness-70 aspect-video rounded-md"
+              muted
+              loop
+            >
+              <source
+                src="asset/video/videoplayback (2) - Trim.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="absolute flex bottom-16 left-0 pl-3">
+              <h2 class="text-md font-semibold text-white font-poppins">
+                Future of Robotics
+              </h2>
+            </div>
+
+            <div class="absolute bottom-0 left-0 pl-3 pb-3">
+              <p class="text-xs text-gray-300 font-poppins">
+                Future robots will be increasingly autonomous, working closely
+                with humans in various industries and transforming our way of
+                life
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full md:hover:scale-110 transition-all ease-in-out"
+          >
+            <video
+              class="hover-video relative brightness-70 aspect-video rounded-md"
+              muted
+              loop
+            >
+              <source
+                src="asset/video/Meet 'Iceman' and 'Wolverine' — the 2 coolest robots in Tesla's factory.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="absolute flex bottom-16 left-0 pl-3">
+              <h2 class="text-md font-semibold text-white font-poppins">
+                Path to Robot Revolution
+              </h2>
+            </div>
+
+            <div class="absolute bottom-0 left-0 pl-3 pb-3">
+              <p class="text-xs text-gray-300 font-poppins">
+                With advancements in AI and automation technology, we are
+                approaching a robot revolution that will globally transform how
+                we work and live
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of third page -->
+
+    <!-- Fourth Page -->
+    <section id="comp">
+      <div class="relative min-h-screen">
+        <div
+          class="text-white flex items-center justify-center text-center font-poppins font-semibold text-3xl py-10 pt-24 px-5 md:text-3xl"
+        >
+          <h1>Company has use robot technology</h1>
+        </div>
+        <div class="container w-full h-full mx-auto">
+          <div
+            class="grid grid-cols-2 md:flex mx-auto gap-x-3 gap-y-5 px-10 sm:px-6 xl:gap-x-7 md:justify-center xl:gap-y-7 lg:gap-x-7 lg:px-56 md:gap-x-10 md:px-40 xl:pt-16 xl:pb-8 xl:text-4xl"
+          >
+            <div class="text-center space-y-3">
+              <div
+                class="box1 bg-gray-900 flex items-center mx-auto shadow-lg p-5 rounded-full w-32 h-32 md:w-40 md:h-40"
+              >
+                <img
+                  src="asset/img/logo/Tesla_logo.png"
+                  class="bg-cover"
+                  alt=""
+                />
+              </div>
+              <div
+                class="text-white font-poppins flex flex-col items-center justify-center text-center text-sm"
+              >
+                <span class="text-lg text-white font-poppins font-semibold">
+                  Tesla
+                </span>
+                <div
+                  class="text-white font-poppins flex items-center justify-center text-center text-xs"
+                >
+                  Electric Car Company
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center space-y-3">
+              <div
+                class="box1 bg-gray-900 flex items-center mx-auto shadow-lg p-5 rounded-full w-32 h-32 md:w-40 md:h-40"
+              >
+                <img
+                  src="asset/img/logo/Foxconn_será_el_fabricante_del_smartphone_de_Amazon___ENTER_CO-removebg-preview.png"
+                  class="bg-cover"
+                  alt=""
+                />
+              </div>
+              <div
+                class="text-white font-poppins text flex flex-col items-center justify-center text-center text-sm"
+              >
+                <span class="text-lg text-white font-poppins font-semibold">
+                  Foxconn
+                </span>
+                <div
+                  class="text-xs text-white font-poppins flex items-center justify-center text-center"
+                >
+                  Technology Manufacturer Company
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center space-y-3">
+              <div
+                class="box1 bg-gray-900 flex items-center mx-auto shadow-lg p-5 rounded-full w-32 h-32 md:w-40 md:h-40"
+              >
+                <img
+                  src="asset/img/logo/Remove-bg.ai_1723521454007.png"
+                  class="bg-cover md:w-24 mx-auto"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-center justify-center text-center text-sm"
+              >
+                <span class="text-lg text-white font-poppins font-semibold">
+                  Boston Dynamic
+                </span>
+                <div
+                  class="text-xs text-white font-poppins flex items-center justify-center text-center"
+                >
+                  Robot Company
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center space-y-3">
+              <div
+                class="box1 bg-gray-900 flex items-center mx-auto shadow-lg p-5 rounded-full w-32 h-32 md:w-40 md:h-40"
+              >
+                <img
+                  src="asset/img/logo/Remove-bg.ai_1723165567575.png"
+                  class="bg-cover w-72"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-center justify-center text-center text-sm"
+              >
+                <span class="text-lg text-white font-poppins font-semibold">
+                  Amazon
+                </span>
+                <div
+                  class="text-xs text-white font-poppins flex items-center justify-center text-center"
+                >
+                  E-Commerce Company
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="text-white flex items-center justify-center text-center font-poppins font-semibold text-sm py-10 px-5 md:text-lg"
+          >
+            <p>
+              there company are use <br />sophisticated robots for create and
+              produce
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Fourth page -->
+
+    <!-- Fivth Page -->
+    <section id="per">
+      <div class="min-h-screen mb-10 pt-20">
+        <div class="mx-auto max-w-lg text-center">
+          <h2 class="text-3xl font-bold sm:text-4xl font-poppins text-white">
+            <span class="text-sky-500">Robots</span> Performance
+          </h2>
+          <p class="mt-4 text-sm font-poppins text-gray-300">
+            The robot revolution, powered by AI, is reshaping industries by
+            enhancing efficiency and replacing human labor. While boosting
+            productivity, it also raises ethical concerns like job displacement.
+            Robots are becoming central to daily life and the future of work.
+          </p>
+        </div>
+        <div class="mt-8 px-3 grid grid-cols-1 gap-3 md:px-3 md:grid-cols-2 lg:grid-cols-3 lg:mt-10">
+          <div
+            class="flex flex-col items-center rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-white/20 hover:shadow-white/20 lg:h-60"
+          >
+            <ion-icon name="trending-up-outline" class="text-white text-4xl"></ion-icon>
+
+            <h2 class="mt-4 text-xl font-bold text-white">
+              Enhanced Efficiency
+            </h2>
+
+              <p class="text-center mt-1 text-sm text-gray-300">
+                Robots perform tasks quickly and accurately, boosting overall
+                productivity
+              </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-white/20 hover:shadow-white/20 lg:h-60"
+          >
+          <ion-icon name="thumbs-up" class="text-white text-4xl "></ion-icon>
+
+            <h2 class="mt-4 text-xl font-bold text-white">Consistency</h2>
+
+            <p class="mt-1 text-sm text-gray-300 text-center">
+              They deliver consistent results without fatigue, ensuring
+              high-quality performance.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-white/20 hover:shadow-white/20"
+          >
+          <ion-icon name="cash-outline" class="text-white text-4xl "></ion-icon>
+
+            <h2 class="mt-4 text-xl font-bold text-white">Cost Reduction</h2>
+
+            <p class="mt-1 text-sm text-gray-300 text-center ">
+              Robots lower operational costs by automating repetitive tasks and
+              reducing the need for human labor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Fivth page -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="px-5 h-14 flex items-center">
+        <p class="text-white font-poppins text-sm">
+          Made with 🔥 by EXE TEAM
+        </p>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Script JS -->
+    <script src="src/js/mobileNav.js"></script>
+    <script src="src/js/scrollNav.js"></script>
+    <script src="src/js/hoverVid.js"></script>
+
+    <!-- ionicons script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
